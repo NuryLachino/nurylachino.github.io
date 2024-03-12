@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #265073;
+  width: 100%;
+}
+header img {
+  width: 200px;
+  height: 90px;
+}
+a {
+  text-decoration: none;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+header ul li {
+  margin: 10px;
+}
+a.navbar-brand {
+  max-width: 10%;
+}
+.logo {
+  width: 70%;
+  height: auto;
+}
+a.nav-link {
+  color: white !important;
+}
+ul.dropdown-menu.show {
+  color: white !important;
+  background-color: #265073;
+}
+
+nav.navbar.navbar-expand-lg {
+  background-color: ·#265073;
+}
+.dropdown-item {
+  color: white !important;
+  background-color: ·#265073 !important;
+}
+
+.dropdown-item:focus, .dropdown-item:hover, a:hover  {
+  background-color: ·#265073 !important;
+}
+.dropdown-menu {
+  --bs-dropdown-link-hover-bg: #3978AD !important;
+  --bs-dropdown-link-active-color: #3978AD !important;
+}
+ .dropdown-menu .submenu{
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: -7px;
+ }
+ .dropdown-menu>li:hover>.submenu{
+  display: block;
+  background-color: #265073;
+ }
+
+/* Cuando la pantalla es menor a 900px  (tablets y teléfonos inteligentes)*/
+@media only screen and (max-width: 900px) {
+  .card-wrapper {
+    width: 100vw !important; 
+    padding-top: 3px !important;
+  }
+  .card-foto-block{
+    display: none !important;
+  }
+  .container1 {
+    height: auto !important;
+  }
+  #video_background {
+    position: relative;
+  }
+  .primero {
+    min-height: 30vh;
+  }
+  .input-group {
+    position: relative;
+
+    margin-top: -16vh;
+  }
+  .container1 h1 {
+    font-size: 3rem !important;
+  }
+  .container1 {
+    height: 25vh !important;
+  }
+
+  .card-details {
+    height: 975px !important;
+  }
+  a.btn.btn-primary.button {
+    margin-bottom: 2vh;
+  }
+}
+
+/*Pagina Acapulco*/
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container1 {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  /*border-radius: 20px;*/
+  box-shadow: 5px 8px 12px black;
+}
+.container1 img {
+  width: 100%;
+  height: auto;
+}
+.container1 h1 {
+  font-size: 6rem;
+  color: #ffffff;
+  font-family: "Big Shoulders Inline Text", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*CARD ACAPULCO*/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #7c8d9c;
+  background-color: #F1FADA !important;
+  font-weight: 400;
+}
+.card-wrapper {
+  display: -o-flex;
+  display: flex;
+  width: 1005px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+}
+.card-foto-block {
+  background-color: #2D9596;
+  width: 465px;
+  height: 610px;
+  position: relative;
+  margin-top: 45px;
+}
+.card-product-logo {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+}
+.card-product-img {
+  position: absolute;
+  top: 53px;
+  left: -130;
+  width: 38vw;
+
+}
+.card-details {
+  position: relative;
+  z-index: 1;
+  width: 540px;
+  height: 785px;
+  background-color: #fff;
+  padding-top: 75px;
+  padding-left: 80px;
+  padding-bottom: 75px;
+  padding-right: 20px;
+  box-shadow: -31px 3px 67px -35px rgba(0, 0, 0, 0.8);
+}
+.title-1 {
+  color: black;
+  font-size: 34px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.subtitle {
+  color: #3a4d5c;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+.features-title {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.33px;
+  margin-bottom: 20px;
+}
+.list {
+  font-size: 13px;
+  line-height: 28px;
+  padding-left: 15px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  list-style-type: none;
+  color: black;
+}
+/*.list li{s
+  color: #6B6B6B;
+}
+*/
+.list li {
+  position: relative;
+}
+.list li::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: #00c217;
+  position: absolute;
+  left: -15px;
+  top: 12px;
+}
+.details {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.28px;
+  margin-bottom: 30px;
+}
+.details-item {
+  margin-right: 20px;
+}
+.quantity {
+  font-size: 11px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.counter {
+  display: flex;
+  margin-left: 1px;
+  margin-bottom: 30px;
+}
+.counter-button {
+  width: 40px;
+  height: 35px;
+  border: 1px solid #7c8d9c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -1px;
+}
+.price-wrapper {
+  margin-bottom: 30px;
+}
+.price {
+  color: #3a4d5c;
+  font-size: 37px;
+}
+.old-price {
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+.button {
+  width: 200px;
+  height: 45px;
+  background-color: #1251d1;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400px;
+  border: none;
+  margin-right: 20px;
+}
+.button-wish-list {
+  width: 200px;
+  height: 45px;
+  border: 1px solid #7c8d9c;
+  background-color: #fff;
+  color: #7c8d9c;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400px;
+}
+.cart {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 30px 20px;
+  margin-top: 35px;
+  width: 1005px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cart-img {
+  width: 48px;
+  height: auto;
+  margin-right: 35px;
+}
+.cart-text {
+  font-size: 22px;
+  font-weight: 600;
+}
+.cart-items {
+  color: #1683d3;
+}
+.clear-cart {
+  margin-left: auto;
+  color: #ecb9b9;
+  border-bottom: 1px dotted #ecb9b9;
+  cursor: pointer;
+}
+
+/*FOOTER*/
+
+.footer {
+  background-color: #fff;
+  line-height: 20px;
+  border-top: 1px solid #ddd;
+  width: 100%;
+  margin-top: 4vh;
+}
+.footer nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+.footer nav > ul a:not(.btn) {
+  color: white;
+  display: block;
+  margin-bottom: 3px;
+}
+.footer nav > ul a:not(.btn):hover, .footer nav > ul a:not(.btn):focus {
+  color: white;
+ 
+}
+.footer .social-area {
+  padding: 0px 0;
+}
+.footer .social-area h5 {
+  padding-bottom: 10px;
+}
+.footer .social-area > a:not(.btn) {
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px 5px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: center;
+}
+.footer .social-area > a:not(.btn):hover, .footer .social-area > a:not(.btn):focus {
+  color: white;
+}
+.footer .copyright {
+  color: white;
+  padding: 10px 15px;
+  margin: 15px 3px;
+  line-height: 20px;
+  text-align: center;
+}
+.footer hr {
+  border-color: #ddd;
+}
+.footer .title {
+  color: #777;
+}
+.footer:not(.footer-big) nav > ul {
+  font-size: 16px;
+}
+.footer:not(.footer-big) nav > ul li {
+  margin-left: 20px;
+  float: left;
+}
+.footer:not(.footer-big) nav > ul a {
+  padding: 10px 0px;
+  margin: 15px 10px 15px 0px;
+}
+.footer-color-gray {
+  background-color: #f5f5f5;
+}
+.footer-color-black, .footer-transparent {
+  background-color: #265073;
+  color: #ddd;
+}
+.footer-color-black nav > ul a, .footer-transparent nav > ul a {
+  color: #fff;
+}
+.footer-color-black nav > ul a:hover, .footer-color-black nav > ul a:focus, .footer-transparent nav > ul a:hover, .footer-transparent nav > ul a:focus {
+  color: #777;
+}
+.footer-color-black .social-area > a:not(.btn), .footer-transparent .social-area > a:not(.btn) {
+  color: #fff;
+}
+.footer-color-black .social-area > a:not(.btn):hover, .footer-color-black .social-area > a:not(.btn):focus, .footer-transparent .social-area > a:not(.btn):hover, .footer-transparent .social-area > a:not(.btn):focus {
+  color: #777;
+}
+.footer-color-black .btn-social, .footer-transparent .btn-social {
+  color: #fff;
+}
+.footer-color-black hr, .footer-transparent hr {
+  border-color: #444;
+}
+.footer-color-black .title, .footer-transparent .title {
+  color: #ddd;
+}
+a {
+  text-decoration: none !important;
+}
+.bx{
+  font-size: 2rem;
+}
